@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Get a Quote | Saloni Machinery</title>
+<meta name="description" content="Contact Henan Saloni Machinery Equipment Co., Ltd for a quote on forage harvesters, TMR mixers and farm machinery. WhatsApp +86 13384039349, email luck@salonijixie.com." />
+<meta property="og:title" content="Get a Quote | Saloni Machinery" />
+<meta property="og:description" content="Contact Henan Saloni Machinery Equipment Co., Ltd for a quote on forage harvesters, TMR mixers and farm machinery. WhatsApp +86 13384039349, email luck@salonijixie.com." />
+<meta property="og:type" content="website" />
+<meta name="theme-color" content="#16395f" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%2316395f'/%3E%3Ctext x='32' y='44' font-family='Arial,sans-serif' font-size='36' font-weight='900' fill='%23ffffff' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E" />
+<link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+<header class="site-header"><div class="wrap header-in">
+<a class="brand" href="/index.html" aria-label="Saloni Machinery home"><span class="brand-mark">SALONI<i>&#9632;</i></span><span class="brand-sub">MACHINERY</span></a>
+<nav class="main-nav"><a href="/index.html">Home</a><a href="/products.html">Machines</a><a href="/about.html">About</a><a href="/contact.html" class="active">Contact</a></nav>
+<a class="btn btn-whatsapp btn-sm header-cta" href="https://wa.me/8613384039349" target="_blank" rel="noopener">WhatsApp Us</a>
+</div></header>
+<main>
+<section class="section"><div class="wrap">
+<div class="section-head"><div class="eyebrow">Contact</div><h2>Get a quote</h2>
+<p>Tell us what you need and our sales team will reply with a recommendation and a price. For the fastest answer, message us on WhatsApp.</p></div>
+<div class="contact-grid">
+<form id="inquiry-form">
+<div class="form-grid">
+<div class="field"><label for="f-name">Your name *</label><input id="f-name" required /></div>
+<div class="field"><label for="f-email">Email *</label><input id="f-email" type="email" required /></div>
+<div class="field"><label for="f-wa">WhatsApp / phone</label><input id="f-wa" /></div>
+<div class="field"><label for="f-country">Country *</label><input id="f-country" required /></div>
+<div class="field"><label for="f-product">Machine you are interested in</label><select id="f-product"><option value="">General inquiry</option><option value="forage-harvester-header">Forage Harvester Header</option><option value="wheel-forage-harvester">Self-Propelled Wheeled Forage Harvester</option><option value="crawler-forage-harvester">Crawler Forage Harvester</option><option value="mini-wheel-forage-harvester">Mini Wheeled Forage Harvester</option><option value="forage-harvest-baler">Forage Harvester Baler Combo</option><option value="tmr-mixer-feeder">TMR Mixer Feeder Wagon</option><option value="tractor-vertical-tmr-mixer">Tractor-Trailed Vertical TMR Mixer</option><option value="3-wheel-vertical-mixer-feeder">3-Wheel Vertical Mixer Feeder</option><option value="forage-mixer">Straw Crusher Mixer</option><option value="3-wheel-feeding-truck">3-Wheel Feeding Truck</option><option value="silage-baler-wrapper">Silage Baler Wrapper</option><option value="round-baler">Round Baler</option><option value="square-baler">Square Baler</option><option value="monorail-transporter">Monorail Transporter</option><option value="manure-spreader">Manure Spreader</option><option value="3-wheel-manure-spreader">3-Wheel Manure Spreader</option><option value="silage-reclaimer">Silage Reclaimer</option><option value="sugarcane-harvester">Sugarcane Harvester</option><option value="remote-mower">Remote Control Mower</option><option value="hoof-trimmer">Cattle Hoof Trimming Truck</option></select></div>
+<div class="field"><label for="f-qty">Quantity</label><input id="f-qty" /></div>
+<div class="field field-full"><label for="f-msg">Tell us about your work (crop, tractor power, destination port) *</label><textarea id="f-msg" rows="5" required></textarea></div>
+</div>
+<p style="margin-top:16px"><button class="btn btn-orange" type="submit">Send Inquiry by Email</button>
+<a class="btn btn-whatsapp" style="margin-left:8px" href="https://wa.me/8613384039349" target="_blank" rel="noopener">Chat on WhatsApp</a></p>
+<p class="product-note">The form opens your email app addressed to luck@salonijixie.com with your inquiry filled in. Nothing is stored on this website.</p>
+</form>
+<div>
+<div class="contact-card"><h3>WhatsApp</h3><p class="big"><a href="https://wa.me/8613384039349" target="_blank" rel="noopener">+86 13384039349</a></p><p>Fastest response, in English, Spanish or Chinese.</p></div>
+<div class="contact-card"><h3>Email</h3><p class="big"><a href="mailto:luck@salonijixie.com">luck@salonijixie.com</a></p><p>For quotes, specifications and shipping documents.</p></div>
+<div class="contact-card"><h3>Company</h3><p class="big">Henan Saloni Machinery Equipment Co., Ltd</p><p>Contact: Luck<br />Henan, China</p></div>
+</div>
+</div></div></section>
+<script>
+(function () {
+  var params = new URLSearchParams(location.search);
+  var slug = params.get("product");
+  if (slug) { var sel = document.getElementById("f-product"); if (sel) sel.value = slug; }
+  document.getElementById("inquiry-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+    var g = function (id) { return document.getElementById(id).value.trim(); };
+    var prod = document.getElementById("f-product");
+    var prodName = prod.options[prod.selectedIndex].text;
+    var subject = "Inquiry: " + prodName + " — " + g("f-country");
+    var body = ["Name: " + g("f-name"), "Email: " + g("f-email"), "WhatsApp / phone: " + g("f-wa"),
+      "Country: " + g("f-country"), "Machine: " + prodName, "Quantity: " + g("f-qty"), "",
+      g("f-msg")].join("\n");
+    location.href = "mailto:luck@salonijixie.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+  });
+})();
+</script>
+</main>
+<footer class="site-footer"><div class="wrap">
+<div class="footer-grid">
+<div><div class="footer-brand">SALONI<i>&#9632;</i> MACHINERY</div>
+<p style="font-size:14.5px">Henan Saloni Machinery Equipment Co., Ltd — agricultural machinery manufacturer in Henan, China. Forage harvesters, TMR mixers, feeding and manure equipment, shipped to customers across Europe, the Americas, Southeast Asia, South America, Australia and Africa.</p></div>
+<div><h4>MACHINES</h4><ul><li><a href="/products/forage-harvester-header.html">Forage Harvester Header</a></li><li><a href="/products/wheel-forage-harvester.html">Self-Propelled Wheeled Forage Harvester</a></li><li><a href="/products/crawler-forage-harvester.html">Crawler Forage Harvester</a></li><li><a href="/products/mini-wheel-forage-harvester.html">Mini Wheeled Forage Harvester</a></li><li><a href="/products/forage-harvest-baler.html">Forage Harvester Baler Combo</a></li><li><a href="/products/tmr-mixer-feeder.html">TMR Mixer Feeder Wagon</a></li><li><a href="/products.html">All machines &rarr;</a></li></ul></div>
+<div><h4>CONTACT</h4><ul>
+<li>WhatsApp: <a href="https://wa.me/8613384039349" target="_blank" rel="noopener">+86 13384039349</a></li>
+<li>Email: <a href="mailto:luck@salonijixie.com">luck@salonijixie.com</a></li>
+<li>Contact: Luck</li>
+<li>Henan, China</li>
+</ul></div>
+</div>
+<div class="footer-bottom"><span>&copy; 2026 Henan Saloni Machinery Equipment Co., Ltd. All rights reserved.</span><span><a href="/about.html">About</a> &middot; <a href="/contact.html">Get a quote</a></span></div>
+</div></footer>
+
+</body>
+</html>
